@@ -1,38 +1,97 @@
-.App {
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(185, 212, 242) 11.2%,
+    rgb(244, 210, 226) 100.3%
+  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+}
+
+.wrap-whole {
+  color: rgb(59, 110, 169);
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrap-board {
+  max-width: 600px;
+  margin: 30px auto 20px;
+  padding: 20px;
+  border: 2px solid rgb(244, 210, 226);
+  box-shadow: #d2d3eb 5px 5px 5px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-form-border {
+  border-radius: 0%;
+  border: 2px solid #d2d3eb;
+  margin: 20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icon-button {
+  background-color: #fff;
+  border: 2px solid #d2d3eb;
+  border-radius: 0%;
+  color: rgb(59, 110, 169);
+  cursor: pointer;
+  margin: 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.error-message {
+  color: rgb(216, 91, 149);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,
+.current-temp {
+  font-size: 48px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.celsius {
+  font-size: 22px;
+  font-weight: 300;
+  position: relative;
+  top: -18px;
+  left: -18px;
+}
+
+ul {
+  margin: 0;
+  padding: 5px;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.description {
+  opacity: 0.5;
+  position: relative;
+  top: -10px;
+}
+
+.weather-forecast {
+  margin-top: 30px;
+}
+
+.weather-forecast-date,
+.weather-forecast-temp-min {
+  opacity: 0.5;
 }
