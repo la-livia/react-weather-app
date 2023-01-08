@@ -95,3 +95,7 @@ li:first-letter {
 .weather-forecast-temp-min {
   opacity: 0.5;
 }
+
+.Footer {
+  text-align: center;
+}
